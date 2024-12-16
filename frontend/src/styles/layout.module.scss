@@ -1,0 +1,16 @@
+@import "../styles/abstracts/variables.scss";
+.mainWrapper{
+	display: flex;
+	flex-direction: column;
+	font-family:Inter;
+	background-color:$black-color; 
+	header{
+		flex:-1;
+	}
+	main{
+		flex: 1;
+	}
+	footer{
+		flex:1;
+	}
+}

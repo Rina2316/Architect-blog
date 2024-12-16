@@ -1,0 +1,56 @@
+@import"../../../styles/abstracts/variables.scss";
+
+.mainWrapper{
+	display: flex;
+	align-items: center;
+	color: $white-color;
+	font-size: 1.6rem;
+	line-height: 2.5rem;
+	padding: 10rem;
+	justify-content: space-between;
+	.text{
+		display: flex;
+		flex-direction: column;
+		gap:2.6rem;
+		max-width: 58rem;
+		h1{
+			font-size: 3rem;
+			line-height: 5rem;
+		}
+	}
+	.articleImage{
+		border: 0.1px solid $dark-gray-color;
+	}
+}
+/* Медиазапросы для мобильных устройств */
+@media (max-width: 768px) {
+	.mainWrapper {
+	  flex-direction: column; /* Элементы будут располагаться по вертикали */
+	  align-items: center; /* Центрируем все элементы */
+	  padding: 2rem; /* Уменьшаем отступы для мобильных устройств */
+	  justify-content: center; /* Центрируем по вертикали */
+	}
+ 
+	.text {
+	  max-width: 100%; /* Убираем ограничение по ширине */
+	  padding: 0 1rem; /* Добавляем отступы с боков */
+	  text-align: center; /* Центрируем текст */
+	}
+ 
+	.articleImage {
+	  width: 100%; /* Изображение будет растягиваться на всю ширину */
+	  height: auto; /* Сохраняем пропорции изображения */
+	  margin-bottom: 2rem; /* Добавляем отступ снизу */
+	}
+ 
+	.text h1 {
+	  font-size: 2.4rem; /* Уменьшаем размер заголовка */
+	  line-height: 3.6rem; /* Уменьшаем межстрочное расстояние */
+	}
+ 
+	.text p {
+	  font-size: 1.4rem; /* Уменьшаем размер текста */
+	  line-height: 2rem; /* Уменьшаем межстрочное расстояние */
+	}
+ }
+ 
